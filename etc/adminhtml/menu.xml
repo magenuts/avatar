@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customer Profile Avatar
+ * 
+ * @author Magenuts Team
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+            <update id="Magenuts_Core::core" title="Magentician Extensions" 
+                module="Magenuts_Avatar" sortOrder="40"
+                resource="Magenuts_Avatar::avataradmin"/>
+		<add id="Magenuts::avatar_setting"
+			 title="Avatar Settings"
+			 module="Magenuts_Avatar" 
+			 sortOrder="1000"
+			 parent="Magenuts_Core::core"
+			 action="adminhtml/system_config/edit/section/magenuts_avatar/"
+			 resource="Magento_Backend::content" />
+	</menu>
+</config>

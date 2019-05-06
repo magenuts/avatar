@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customer Profile Avatar
+ * 
+ * @author Magenuts Team
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="standard">
+		<route id="magenuts_avatar" frontName="magenuts_avatar">
+			<module name="Magenuts_Avatar" />
+		</route>
+	</router>
+</config>
